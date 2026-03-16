@@ -25,7 +25,7 @@ constructor(private readonly page: Page)
   }
 
   async login(email: string, password: string) {
-    await this.goto();
+   // await this.goto();
     await this.username.fill(email);
     await this.password.fill(password);
     await this.submit.click();
