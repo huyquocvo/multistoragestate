@@ -28,9 +28,9 @@ jobs:
     - name: 'Create env file'
       run: |
           touch .env
-          echo UI_URL="https://practicesoftwaretesting.com" >> .env
-          echo CUSTOMER_02_USERNAME="customer2@practicesoftwaretesting.com" >> .env
-          echo CUSTOMER_02_PASSWORD="welcome01" >> .env
-          ADMIN_USERNAME="admin@practicesoftwaretesting.com" >> .env
-          echo ADMIN_PASSWORD="welcome01" >> .env
+          echo "UI_URL=https://practicesoftwaretesting.com" >> .env
+          echo "CUSTOMER_02_USERNAME=customer2@practicesoftwaretesting.com" >> .env
+          echo "CUSTOMER_02_PASSWORD=welcome01" >> .env
+          echo "ADMIN_USERNAME=admin@practicesoftwaretesting.com" >> .env
+          echo "ADMIN_PASSWORD=welcome01" >> .env
           cat .env
