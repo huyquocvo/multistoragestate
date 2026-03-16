@@ -23,7 +23,6 @@ constructor(private readonly page: Page)
   async goto() {
     await this.page.goto("https://practicesoftwaretesting.com/auth/login");
   }
-
   async login(email: string, password: string) {
     await this.goto();
     await this.username.fill(email);
