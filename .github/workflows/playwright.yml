@@ -27,7 +27,6 @@ jobs:
         retention-days: 30
     - name: 'Create env file'
       run: |
-          touch .env
           echo "UI_URL=https://practicesoftwaretesting.com" >> .env
           echo "CUSTOMER_02_USERNAME=customer2@practicesoftwaretesting.com" >> .env
           echo "CUSTOMER_02_PASSWORD=welcome01" >> .env
