@@ -31,10 +31,10 @@ export default defineConfig({
   reporter: [["html"], ["list"]],
   use: {
     testIdAttribute: "data-test",
-    baseURL: process.env.UI_URL,
+    baseURL: process.env.BASE_URL,
     //apiURL: process.env.API_URL,
     //apiBaseURL: process.env.API_URL,
     trace: "on",
-    headless: true,
+    headless: false,
   },
 });
