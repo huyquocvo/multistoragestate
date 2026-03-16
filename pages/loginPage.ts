@@ -1,6 +1,6 @@
 // lib/pages/loginPage.ts
 
-import { Locator, Page } from "@playwright/test";
+import { Locator, Page,expect } from "@playwright/test";
 
 export class LoginPage {
   readonly username:Locator;
@@ -22,13 +22,14 @@ constructor(private readonly page: Page)
     }
   async goto() {
     await this.page.goto("https://practicesoftwaretesting.com/auth/login");
+    await expect(this.page.getByRole('heading', { name: 'Login' })).toBeVisible();
   }
 
-  async login(email: string, password: string) {
-    await this.goto();
-    await this.username.fill(email);
-    await this.password.fill(password);
-    await this.submit.click();
-  }
+  // async login(email: string, password: string) {
+  //   await this.goto();
+  //   await this.username.fill(email);
+  //   await this.password.fill(password);
+  //   await this.submit.click();
+  // }
 
 }
