@@ -22,10 +22,10 @@ setup("Create Admin Auth", async ({ page, context }) => {
   const loginPage = new LoginPage(page);
   await loginPage.goto();
 
-  // await loginPage.login(adminEmail, adminPassword);
-  // expect(await loginPage.navAdminMenu.innerText()).toContain("John Doe");
+  await loginPage.login(adminEmail, adminPassword);
+  expect(await loginPage.navAdminMenu.innerText()).toContain("John Doe");
 
-  // await context.storageState({ path: adminAuthFile });
+  await context.storageState({ path: adminAuthFile });
 });
 
 // setup("Create Customer 01 Auth", async ({ page, context }) => {
@@ -42,8 +42,8 @@ setup("Create Customer 02 Auth", async ({ page, context }) => {
   const loginPage = new LoginPage(page);
   await loginPage.goto();
 
-  // await loginPage.login(customer02Email, customer02Password);
-  // expect(await loginPage.navUserMenu.innerText()).toContain("Jack Howe");
+  await loginPage.login(customer02Email, customer02Password);
+  expect(await loginPage.navUserMenu.innerText()).toContain("Jack Howe");
 
-  // await context.storageState({ path: customer02AuthFile });
+  await context.storageState({ path: customer02AuthFile });
 });

@@ -2,10 +2,10 @@
   "cookies": [
     {
       "name": "cf_clearance",
-      "value": "a6zf1faABb.WiMcHeH4WtKiilWAKLOGxonCioWbckxY-1773636537-1.2.1.1-_87oaKIgkqpLbUhBznPkVDLEmM1zsUVwXzBHBubf00ZqK7pM_k4GUj12IUQ6Jn8tzGVoNOb3UGbrzaCcc4NSMmFzEkrBClxg8CVbnqGP35mgC5u5doqCTK5oxvGouFTK.9rtjMUHUX13evbTxWeHqcKEhZ5W_b2ORbfTwpKM72ZTT1061zihymyXLlZ7W00Fo5nbUG2pfeiL3.M43wJYw26OgyrY9PczzOZSEdZHVHA",
+      "value": "x765yL6l5N44EKuN8d9uQNFbyJOOyTGVACf4uTOfRug-1773646025-1.2.1.1-5_DzVKPD5jsygMF2Ss3nLvG8pncBDnrwyxToWrMZwZXlgesDDNrjCJ8.VdxQ6P8WMjdlvhxbF07gh3zwjPQGeCpsVLi9AiqNANRdpn2nTl76Y.JeRmpzxgFMcYasRhSCGFcxp82BJ.1I3Vd4Qvx158u9SB44Sod3z8bmKmne4G7vdf5PzhI6kcLTwkdbUWajE68mK_h0fDKQuCp1aoEJ1IpcPecr15MNXYnwt7qhoPE",
       "domain": ".practicesoftwaretesting.com",
       "path": "/",
-      "expires": 1805172537.313782,
+      "expires": 1805182026.002532,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None",
@@ -19,7 +19,7 @@
       "localStorage": [
         {
           "name": "auth-token",
-          "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FwaS5wcmFjdGljZXNvZnR3YXJldGVzdGluZy5jb20vdXNlcnMvbG9naW4iLCJpYXQiOjE3NzM2MzY1MzksImV4cCI6MTc3MzYzNjgzOSwibmJmIjoxNzczNjM2NTM5LCJqdGkiOiJiOFpxUjF0NlhSWUlOUkN1Iiwic3ViIjoiMDFLS1RDVEJaNkU1QVpWMEJFRlpUQTBQQzMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3Iiwicm9sZSI6ImFkbWluIn0._Ha3XlqN6EtB78SAQ0XEOt8KeJe2dKrAx2SkrqwUpYc"
+          "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FwaS5wcmFjdGljZXNvZnR3YXJldGVzdGluZy5jb20vdXNlcnMvbG9naW4iLCJpYXQiOjE3NzM2NDYwMjksImV4cCI6MTc3MzY0NjMyOSwibmJmIjoxNzczNjQ2MDI5LCJqdGkiOiJDUU05YkluNFdBUnFQalpZIiwic3ViIjoiMDFLS1RRM1lOUzhBVjY4Q0tXOFc2MUhBSEYiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3Iiwicm9sZSI6ImFkbWluIn0.Ar_NI-3sJVQrm5wsoklAUtbH6_0CitzQib4F0qqo-Ek"
         }
       ]
     }

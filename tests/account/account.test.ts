@@ -16,25 +16,25 @@ import { test, expect } from "@playwright/test";
 // });
 
 test.describe("Customer 02 my account specs", () => {
-  // test.use({ storageState: ".auth/customer02.json" });
+  test.use({ storageState: ".auth/customer02.json" });
 
-  // test("validate customer 02 my account page", async ({ page }) => {
-  //   await page.goto("/#/account");
+  test("validate customer 02 my account page", async ({ page }) => {
+    await page.goto("/#/account");
 
-  //   expect(await page.getByTestId("nav-menu").innerText()).toContain("Jack Howe");
-  //   await page.getByTestId("nav-menu").click();
-  //   expect(await page.getByTestId("nav-my-account").innerText()).toContain("My account");
-  //   expect(await page.getByTestId("nav-my-favorites").innerText()).toContain("My favorites");
-  // });
+    expect(await page.getByTestId("nav-menu").innerText()).toContain("Jack Howe");
+    await page.getByTestId("nav-menu").click();
+    expect(await page.getByTestId("nav-my-account").innerText()).toContain("My account");
+    expect(await page.getByTestId("nav-my-favorites").innerText()).toContain("My favorites");
+  });
 });
 
 test.describe("Admin my account specs", () => {
-  // test.use({ storageState: ".auth/admin.json" });
+  test.use({ storageState: ".auth/admin.json" });
 
-  // test("Validate admin my account page fails to load", async ({ page }) => {
-  //   await page.goto("/#/account");
+  test("Validate admin my account page fails to load", async ({ page }) => {
+    await page.goto("/#/account");
 
-  //   expect(page.url()).toContain("/#/account");
-  //   expect(await page.getByTestId("nav-menu").innerText()).toContain("John Doe");
-  // });
+    expect(page.url()).toContain("/#/account");
+    expect(await page.getByTestId("nav-menu").innerText()).toContain("John Doe");
+  });
 });
