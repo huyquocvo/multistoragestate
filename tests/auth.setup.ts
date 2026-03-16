@@ -22,7 +22,7 @@ setup("Create Admin Auth", async ({ page, context }) => {
   const loginPage = new LoginPage(page);
   await loginPage.goto();
 
-  await loginPage.login(adminEmail, adminPassword);
+  await loginPage.login('admin@practicesoftwaretesting.com', 'welcome01');
   expect(await loginPage.navAdminMenu.innerText()).toContain("John Doe");
 
   await context.storageState({ path: adminAuthFile });
@@ -42,7 +42,7 @@ setup("Create Customer 02 Auth", async ({ page, context }) => {
   const loginPage = new LoginPage(page);
   await loginPage.goto();
 
-  await loginPage.login(customer02Email, customer02Password);
+  await loginPage.login('customer2@practicesoftwaretesting.com', 'welcome01');
   expect(await loginPage.navUserMenu.innerText()).toContain("Jack Howe");
 
   await context.storageState({ path: customer02AuthFile });

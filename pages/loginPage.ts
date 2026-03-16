@@ -21,7 +21,7 @@ constructor(private readonly page: Page)
     this.navSignIn = this.page.getByTestId("nav-sign-in");
     }
   async goto() {
-    await this.page.goto("/auth/login");
+    await this.page.goto("https://practicesoftwaretesting.com/auth/login");
   }
 
   async login(email: string, password: string) {
