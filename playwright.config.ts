@@ -4,7 +4,7 @@ import { defineConfig,devices } from "@playwright/test";
 // import type { APIRequestOptions } from "./lib/fixtures/apiRequest";
 // import { TestOptions } from "./lib/pages";
 
-require("dotenv").config();
+//require("dotenv").config();
 
 export default defineConfig({
 
