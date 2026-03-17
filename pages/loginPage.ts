@@ -25,8 +25,8 @@ constructor(private readonly page: Page)
   async goto() 
   {
   await this.page.goto("/auth/login/");
-    const strURL = await this.page.url();
-    console.log(strURL);
+    // const strURL = await this.page.url();
+    // console.log(strURL);
   // Expect a title "to contain" a substring.
   //await expect(this.page).toHaveTitle(/Practice Software Testing/);
 
