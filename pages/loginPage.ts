@@ -12,8 +12,8 @@ export class LoginPage {
   readonly navSignIn:Locator;
 constructor(private readonly page: Page) 
     {
-    this.username = this.page.locator("#email");
-    this.password = this.page.locator("#password");
+    this.username = this.page.getByTestId("email");
+    this.password = this.page.getByTestId("password");
     this.submit = this.page.getByTestId("login-submit");
     this.navUserMenu = this.page.getByTestId("nav-menu");
     this.navAdminMenu = this.page.getByTestId("nav-menu");

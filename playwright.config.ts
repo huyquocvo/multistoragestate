@@ -30,7 +30,7 @@ export default defineConfig({
   workers: process.env.CI ? 2 : undefined,
   reporter: [["html"], ["list"]],
   use: {
-    //testIdAttribute: "data-test",
+    testIdAttribute: "data-test",
     baseURL: process.env.BASE_URL,
     //apiURL: process.env.API_URL,
     //apiBaseURL: process.env.API_URL,
