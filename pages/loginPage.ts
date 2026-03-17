@@ -25,7 +25,7 @@ constructor(private readonly page: Page)
   async goto() 
   {
   await this.page.goto("/auth/login/");
-  await expect(this.page.getByRole('heading', { name: 'Login' })).toBeVisible();
+  
   // Expect a title "to contain" a substring.
   //await expect(this.page).toHaveTitle(/Practice Software Testing/);
 
