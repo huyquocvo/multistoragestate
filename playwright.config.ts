@@ -12,7 +12,7 @@ export default defineConfig({
     { 
       name: "setup", 
       testMatch: /.*\.setup\.ts/, 
-      fullyParallel: true 
+      fullyParallel: false 
 
     },
     {
@@ -28,7 +28,7 @@ export default defineConfig({
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 1 : 0,
-  workers: process.env.CI ? 2 : undefined,
+  workers: process.env.CI ? 1 : undefined,
   reporter: [["html"], ["list"]],
   use: {
     testIdAttribute: 'data-test',
@@ -36,6 +36,6 @@ export default defineConfig({
     //apiURL: process.env.API_URL,
     //apiBaseURL: process.env.API_URL,
     trace: "on",
-    headless: true,
+    headless: false,
   },
 });
