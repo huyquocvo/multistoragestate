@@ -36,6 +36,6 @@ export default defineConfig({
     //apiURL: process.env.API_URL,
     //apiBaseURL: process.env.API_URL,
     trace: "on",
-    headless: false,
+    headless: true,
   },
 });
