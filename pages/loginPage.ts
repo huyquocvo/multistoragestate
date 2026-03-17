@@ -22,14 +22,12 @@ constructor(private readonly page: Page)
     }
   async goto() {
     await this.page.goto("/auth/login/");
-    await this.page.screenshot({ path: 'element.png' });
   }
 
   async login(email: string, password: string) {
    // await this.goto();
     await this.username.fill(email);
     await this.password.fill(password);
-    await this.page.screenshot({ path: 'element.png' });
     await this.submit.click();
   }
 }
