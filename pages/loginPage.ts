@@ -1,6 +1,6 @@
 // lib/pages/loginPage.ts
 
-import { Locator, Page } from "@playwright/test";
+import { Locator, Page,expect } from "@playwright/test";
 
 export class LoginPage {
   readonly username:Locator;
@@ -20,16 +20,12 @@ constructor(private readonly page: Page)
     this.navSignOut = this.page.getByTestId("nav-sign-out");
     this.navSignIn = this.page.getByTestId("nav-sign-in");
     }
-  async goto() {
+  async goto() 
+  {
   await this.page.goto("/auth/login/");
-  await this.page.getByTestId("email").fill("admin@practicesoftwaretesting.com");
-  await this.page.getByTestId("password").fill("welcome01");
-  await this.page.getByTestId("login-submit").click();
-  await this.page
-    .getByRole('listitem')
-    .filter({ hasText: 'Home' }).isVisible();
+
   // Expect a title "to contain" a substring.
-  //await expect(page).toHaveTitle(/Practice Software Testing/);
+  await expect(this.page).toHaveTitle(/Practice Software Testing/);
 
   }
 
