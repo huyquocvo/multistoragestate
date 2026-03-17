@@ -22,7 +22,7 @@ constructor(private readonly page: Page)
     }
   async goto() 
   {
-  await this.page.goto("/auth/login/");
+  await this.page.goto("https://practicesoftwaretesting.com/auth/login");
 
   // Expect a title "to contain" a substring.
   await expect(this.page).toHaveTitle(/Practice Software Testing/);
