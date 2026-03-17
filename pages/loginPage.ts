@@ -21,7 +21,16 @@ constructor(private readonly page: Page)
     this.navSignIn = this.page.getByTestId("nav-sign-in");
     }
   async goto() {
-    await this.page.goto("/auth/login/");
+  await this.page.goto("/auth/login/");
+  await this.page.getByTestId("email").fill("admin@practicesoftwaretesting.com");
+  await this.page.getByTestId("password").fill("welcome01");
+  await this.page.getByTestId("login-submit").click();
+  await this.page
+    .getByRole('listitem')
+    .filter({ hasText: 'Home' }).isVisible();
+  // Expect a title "to contain" a substring.
+  //await expect(page).toHaveTitle(/Practice Software Testing/);
+
   }
 
   async login(email: string, password: string) {
