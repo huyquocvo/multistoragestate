@@ -11,6 +11,7 @@ export class LoginPage {
   readonly navSignOut:Locator;
   readonly navSignIn:Locator;
 constructor(private readonly page: Page) 
+
     {
     this.username = this.page.getByTestId("email");
     this.password = this.page.getByTestId("password");
@@ -20,12 +21,13 @@ constructor(private readonly page: Page)
     this.navSignOut = this.page.getByTestId("nav-sign-out");
     this.navSignIn = this.page.getByTestId("nav-sign-in");
     }
+
   async goto() 
   {
   await this.page.goto("/auth/login/");
 
   // Expect a title "to contain" a substring.
-  //await expect(this.page).toHaveTitle(/Practice Software Testing/);
+  await expect(this.page).toHaveTitle(/Practice Software Testing/);
 
   }
 
