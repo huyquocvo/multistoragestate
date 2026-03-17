@@ -21,6 +21,8 @@ const customer02AuthFile = ".auth/customer02.json";
 setup("Create Admin Auth", async ({ page, context }) => {
   const loginPage = new LoginPage(page);
   await loginPage.goto();
+  const url:string = await page.url();
+  console.log(url);
 
   await loginPage.login(adminEmail, adminPassword);
   expect(await loginPage.navAdminMenu.innerText()).toContain("John Doe");
