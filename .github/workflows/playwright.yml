@@ -26,7 +26,7 @@ jobs:
           cf_account_id: ${{ secrets.CF_ACCOUNT_ID }}
           cf_api_token: ${{ secrets.CF_API_TOKEN }}
           cf_zone_id: ${{ secrets.CF_ZONE_ID }}
-          github_api_token: ${{ secrets.GITHUB_TOKEN }}
+          github_api_token: ${{ secrets.CF_GITHUB_TOKEN }}
     - name: Send request to Cloudflare-protected server
       run: curl https://example.com/api
     - name: Install dependencies
