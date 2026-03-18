@@ -20,7 +20,7 @@ jobs:
       with:
         node-version: lts/*
     - name: Bypass Cloudflare for Github Action Pro
-      uses: snowdreamtech/bypass-cloudflare-for-github-action@v0.0.4
+      uses: xiaotianxt/bypass-cloudflare-for-github-action@v2.1.0
       with:
           mode: 'github'
           cf_account_id: ${{ secrets.CF_ACCOUNT_ID }}
