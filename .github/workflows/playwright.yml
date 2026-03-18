@@ -19,16 +19,6 @@ jobs:
     - uses: actions/setup-node@v6
       with:
         node-version: lts/*
-    - name: Bypass Cloudflare for Github Action Pro
-      uses: snowdreamtech/bypass-cloudflare-for-github-action@v0.0.3
-      with:
-        mode: 'github'
-        cf_account_id: ${{ secrets.CF_ACCOUNT_ID }}
-        cf_api_token: ${{ secrets.CF_API_TOKEN }}
-        cf_zone_id: ${{ secrets.CF_ZONE_ID }}
-        github_api_token: ${{ secrets.GITHUB_TOKEN }}
-    - name: Send request to Cloudflare-protected server
-      run: curl https://example.com/api
     - name: Install dependencies
       run: npm ci
     - name: Install Playwright Browsers
