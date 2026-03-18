@@ -31,11 +31,13 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: [["html"], ["list"]],
   use: {
-    testIdAttribute: 'data-test',
     baseURL: process.env.BASE_URL,
-    //apiURL: process.env.API_URL,
-    //apiBaseURL: process.env.API_URL,
-    trace: "on",
     headless: true,
+    screenshot: 'only-on-failure',
+    video: 'retain-on-failure',
+    actionTimeout: 90 * 500,
+    navigationTimeout: 90 * 500,
+    trace: 'on-first-retry',
+    testIdAttribute: 'data-test'
   },
 });
