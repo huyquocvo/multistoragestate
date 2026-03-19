@@ -20,7 +20,7 @@ jobs:
       with:
         node-version: lts/*
     - name: Bypass Cloudflare for Github Action Pro
-      uses: SystemVll/cloudflare-captcha-bypass@v1.0.0
+      uses: snowdreamtech/bypass-cloudflare-for-github-action@v0.0.3
       with:
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
