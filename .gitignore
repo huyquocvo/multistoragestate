@@ -7,3 +7,6 @@ node_modules/
 /playwright/.cache/
 /playwright/.auth/
 /.env
+.auth/customer02.json
+.auth/admin.json
+.auth/customer02.json

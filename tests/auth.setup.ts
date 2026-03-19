@@ -1,8 +1,6 @@
 // tests/auth.setup.ts
 
 // Save your storage state to a file in the .auth directory via setup test
-
-
 import { test as setup, expect } from "@playwright/test";
 import { LoginPage } from "../pages/loginPage";
 
