@@ -28,7 +28,6 @@ constructor(private readonly page: Page)
   
   // Expect a title "to contain" a substring.
   //await expect(this.page).toHaveTitle(/Practice Software Testing/);
-
   }
 
   async login(email: string, password: string) {
