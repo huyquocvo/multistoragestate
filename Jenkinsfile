@@ -11,7 +11,7 @@ pipeline {
         stage('Run Playwright Tests') {
             steps {
                 // Run tests, generating raw data into 'allure-results'
-                sh 'npx playwright test --reporter=allure-playwright'
+                bat 'npx playwright test --reporter=allure-playwright'
             }
         }
     }
