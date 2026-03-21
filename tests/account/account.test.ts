@@ -30,7 +30,6 @@ test.describe("Customer 02 my account specs", () => {
 
 test.describe("Admin my account specs", () => {
   test.use({ storageState: ".auth/admin.json" });
-
   test("Validate admin my account page fails to load", async ({ page }) => {
     await page.goto("/#/account");
 
