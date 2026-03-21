@@ -8,14 +8,25 @@ pipeline {
                 bat 'npx playwright install'
             }
         }
-        stage('Run Tests') {
+        stage('Run Playwright Tests') {
             steps {
-                bat 'npx playwright test --reporter=html,junit'
+                // Run tests, generating raw data into 'allure-results'
+                sh 'npx playwright test --reporter=allure-playwright'
             }
         }
-        stage('Archive Results') {
-            steps {
-                archiveArtifacts artifacts: 'playwright-report/**', allowEmptyArchive: true
+    }
+
+    post {
+        always {
+            // Publish the Allure report as a post-build action
+            script {
+                // This step uses the 'allure' command provided by the Jenkins plugin
+                // It reads the 'allure-results' and generates the HTML report
+                allure([
+                    includeProperties: false,
+                    jdk: '',
+                    results: [[path: 'allure-results']]
+                ])
             }
         }
     }

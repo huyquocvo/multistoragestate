@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","3388","has title","ui-tests","2026-03-21","passed","2026-03-21","","example.spec.ts","",""
+"","3150","get started link","ui-tests","2026-03-21","passed","2026-03-21","","example.spec.ts","",""
+"","12241","Create Admin Auth","setup","2026-03-21","passed","2026-03-21","","auth.setup.ts","",""
+"","7637","Create Customer 02 Auth","setup","2026-03-21","passed","2026-03-21","","auth.setup.ts","",""
+"","8968","validate customer 02 my account page","ui-tests","2026-03-21","passed","2026-03-21","Customer 02 my account specs","account\account.test.ts","",""
+"","8270","Validate admin my account page fails to load","ui-tests","2026-03-21","passed","2026-03-21","Admin my account specs","account\account.test.ts","",""

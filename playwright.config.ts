@@ -29,7 +29,13 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 1 : 0,
   workers: process.env.CI ? 1 : undefined,
-  reporter: [["html"], ["list"]],
+  reporter: [
+    ['list'],
+    ['allure-playwright', {
+      outputFolder: 'allure-results',
+      // other Allure options if needed
+    }]
+  ],
   use: {
     baseURL: process.env.BASE_URL,
     headless: true,
