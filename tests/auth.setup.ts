@@ -54,6 +54,5 @@ setup("Create Customer 03 Auth", async ({ page, context }) => {
 
   await loginPage.login(customer03Email, customer03Password);
   expect(await loginPage.navUserMenu.innerText()).toContain("Bob Smith");
-
   await context.storageState({ path: customer03AuthFile });
 });
