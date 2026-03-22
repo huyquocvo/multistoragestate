@@ -17,7 +17,6 @@ import { test, expect } from "@playwright/test";
 
 test.describe("Customer 02 my account specs", () => {
   test.use({ storageState: ".auth/customer02.json" });
-
   test("validate customer 02 my account page", async ({ page }) => {
     await page.goto("/#/account");
 
