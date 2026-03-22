@@ -16,6 +16,8 @@ jobs:
       CUSTOMER_01_PASSWORD: ${{secrets.CUSTOMER_01_PASSWORD}}
       CUSTOMER_02_USERNAME: ${{secrets.CUSTOMER_02_USERNAME}}
       CUSTOMER_02_PASSWORD: ${{secrets.CUSTOMER_02_PASSWORD}}
+      CUSTOMER_03_USERNAME: ${{secrets.CUSTOMER_03_USERNAME}}
+      CUSTOMER_03_PASSWORD: ${{secrets.CUSTOMER_03_PASSWORD}}
     steps:
     - uses: actions/checkout@v6
     - uses: actions/setup-node@v6
