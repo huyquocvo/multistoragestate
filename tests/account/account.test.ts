@@ -26,6 +26,17 @@ test.describe("Customer 02 my account specs", () => {
     expect(await page.getByTestId("nav-my-favorites").innerText()).toContain("My favorites");
   });
 });
+test.describe("Customer 03 my account specs", () => {
+  test.use({ storageState: ".auth/customer03.json" });
+  test("validate customer 03 my account page", async ({ page }) => {
+    await page.goto("/#/account");
+
+    expect(await page.getByTestId("nav-menu").innerText()).toContain("Bob Smith");
+    await page.getByTestId("nav-menu").click();
+    expect(await page.getByTestId("nav-my-account").innerText()).toContain("My account");
+    expect(await page.getByTestId("nav-my-favorites").innerText()).toContain("My favorites");
+  });
+});
 
 test.describe("Admin my account specs", () => {
   test.use({ storageState: ".auth/admin.json" });
