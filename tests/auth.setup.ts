@@ -16,6 +16,10 @@ let customer02Email = process.env.CUSTOMER_02_USERNAME as string;
 let customer02Password = process.env.CUSTOMER_02_PASSWORD as string;
 const customer02AuthFile = ".auth/customer02.json";
 
+let customer03Email = process.env.CUSTOMER_03_USERNAME as string;
+let customer03Password = process.env.CUSTOMER_03_PASSWORD as string;
+const customer03AuthFile = ".auth/customer03.json";
+
 setup("Create Admin Auth", async ({ page, context }) => {
   const loginPage = new LoginPage(page);
   await loginPage.goto();
@@ -42,4 +46,14 @@ setup("Create Customer 02 Auth", async ({ page, context }) => {
   expect(await loginPage.navUserMenu.innerText()).toContain("Jack Howe");
 
   await context.storageState({ path: customer02AuthFile });
+});
+
+setup("Create Customer 03 Auth", async ({ page, context }) => {
+  const loginPage = new LoginPage(page);
+  await loginPage.goto();
+
+  await loginPage.login(customer03Email, customer03Password);
+  expect(await loginPage.navUserMenu.innerText()).toContain("Jack Howe");
+
+  await context.storageState({ path: customer03AuthFile });
 });
