@@ -2,18 +2,18 @@
 
 import { test, expect } from "@playwright/test";
 
-// test.describe("Customer 01 my account specs", () => {
-//   test.use({ storageState: ".auth/customer01.json" });
+test.describe("Customer 01 my account specs", () => {
+  test.use({ storageState: ".auth/customer01.json" });
   
-//   test("validate customer 01 my account page", async ({ page }) => {
-//     await page.goto("/#/account");
+  test("validate customer 01 my account page", async ({ page }) => {
+    await page.goto("/#/account");
 
-//     expect(await page.getByTestId("nav-menu").innerText()).toContain("abc ac");
-//     await page.getByTestId("nav-menu").click();
-//     expect(await page.getByTestId("nav-my-account").innerText()).toContain("My account");
-//     expect(await page.getByTestId("nav-my-favorites").innerText()).toContain("My favorites");
-//   });
-// });
+    expect(await page.getByTestId("nav-menu").innerText()).toContain("Jane Doe");
+    await page.getByTestId("nav-menu").click();
+    expect(await page.getByTestId("nav-my-account").innerText()).toContain("My account");
+    expect(await page.getByTestId("nav-my-favorites").innerText()).toContain("My favorites");
+  });
+});
 
 test.describe("Customer 02 my account specs", () => {
   test.use({ storageState: ".auth/customer02.json" });

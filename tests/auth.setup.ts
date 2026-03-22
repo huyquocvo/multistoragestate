@@ -25,15 +25,15 @@ setup("Create Admin Auth", async ({ page, context }) => {
   await context.storageState({ path: adminAuthFile });
 });
 
-// setup("Create Customer 01 Auth", async ({ page, context }) => {
-//   const loginPage = new LoginPage(page);
-//   await loginPage.goto();
+setup("Create Customer 01 Auth", async ({ page, context }) => {
+  const loginPage = new LoginPage(page);
+  await loginPage.goto();
 
-//   await loginPage.login(customer01Email, customer01Password);
-//   expect(await loginPage.navUserMenu.innerText()).toContain("abc ac");
+  await loginPage.login(customer01Email, customer01Password);
+  expect(await loginPage.navUserMenu.innerText()).toContain("Jane Doe");
 
-//   await context.storageState({ path: customer01AuthFile });
-// });
+  await context.storageState({ path: customer01AuthFile });
+});
 setup("Create Customer 02 Auth", async ({ page, context }) => {
   const loginPage = new LoginPage(page);
   await loginPage.goto();
