@@ -31,6 +31,10 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: [
     ['list'],
+    ['html', {
+      outputFolder: 'playwright-report',
+      // other Allure options if needed
+    }],
     ['allure-playwright', {
       outputFolder: 'allure-results',
       // other Allure options if needed
