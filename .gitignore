@@ -7,3 +7,19 @@ node_modules/
 /playwright/.cache/
 /playwright/.auth/
 
+.auth/admin.json
+.auth/customer01.json
+.auth/customer02.json
+allure-results/9c09185f-8d28-4e67-a6c9-ca0fb7fea351-result.json
+allure-results/24f8ab06-8b67-4697-bed8-166360248c23-result.json
+allure-results/43d0ef97-e678-44c0-a548-a7bdbc577b78-result.json
+allure-results/61dbe690-80e8-494e-b583-3e793076d703-result.json
+allure-results/64feab96-06dd-4835-924a-91cffc80c87c-result.json
+allure-results/87859747-5eca-40ac-a7ed-cbaf68757520-attachment.png
+allure-results/aee267fd-820a-49a5-a13a-c8caae15d6e3-result.json
+allure-results/af2f0593-0d8a-485c-ac15-b89b7c632c79-attachment.webm
+allure-results/b36733b1-c6fa-4122-9233-a3c5c0e1ad73-result.json
+allure-results/c642eb90-2b32-43ae-a698-297e1b706a97-result.json
+allure-results/d926fe1c-7e0a-4053-9945-a204b702afbe-result.json
+allure-results/e0b3a133-1b65-4a71-aab8-2eeb8497f829-result.json
+allure-results/e719799a-ee5a-4445-865e-8d238aee5216-attachment.md

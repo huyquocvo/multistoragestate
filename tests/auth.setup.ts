@@ -37,6 +37,7 @@ setup("Create Customer 01 Auth", async ({ page, context }) => {
 
   await context.storageState({ path: customer01AuthFile });
 });
+
 setup("Create Customer 02 Auth", async ({ page, context }) => {
   const loginPage = new LoginPage(page);
   await loginPage.goto();
